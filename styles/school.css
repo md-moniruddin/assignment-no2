@@ -115,6 +115,7 @@ main{
     margin-right: 140px;
 }
 .img-hero{
+    display: flex;
     width: 310px 575px;
     padding-right: 30px;
 }
@@ -227,16 +228,40 @@ main{
 /*Our Stories part-3 */
 
 .our-stories-part3{
+    margin-left: 130px;
+    margin-right: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 }
+.our-story-images5{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2);
+}
+.image-story{
+    border-radius: 16px;
+}
 .text-color{
     color: rgb(102, 102, 102);
 }
-footer{
+.bg-footer{
     background-color: rgb(1, 172, 253);
+}
+.footer-part{
+    margin-left: 140px;
+    margin-right: 228px;
+    justify-content: space-between;
+    gap: 40px;
+}
+.footer-links{
+    text-decoration: none;
+}
+.footer-link{
+    list-style: none;
+    gap: 20px;
+
 }
 .last-part{
 
@@ -245,10 +270,12 @@ footer{
 .kids-education{
     color: white;
 }
+.last-part{
+
+}
 /* responsive media small */
-@media screen and (max-width:576px) {
-    .navbar,
-    .img-hero{
+@media screen and (max-width: 576px) {
+    .navbar, .img-hero, .footer-part{
         flex-direction: column;
     }
     .empower{
@@ -256,9 +283,13 @@ footer{
         justify-items: center;
         margin-left: 20px;
     }
+    .Curriculum{
+        flex-direction: column;
+    }
     .text-top-part{
         justify-items: center;
         margin-right: 20px;
         margin-left: 20px;
     }
+    .last-part{}
 }
